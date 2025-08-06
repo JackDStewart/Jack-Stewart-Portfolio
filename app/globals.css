@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #F5F7FB;
+  --surface: #FFFFFF;
+  --text: #0B0F19;
+  --primary: #8B5CF6;
+  --primary-hover: #7C3AED;
+  --accent: #06B6D4;
+}
+
+.dark {
+  --bg: #0A0E17;
+  --surface: #0F1626;
+  --text: #E5E7EB;
+  --primary: #8B5CF6;
+  --primary-hover: #7C3AED;
+  --accent: #06B6D4;
+}
+
+@layer base {
+  /* If you don't have a 'border' color in tailwind.config, remove the next rule */
+  * {
+    @apply border-border;
+  }
+
+  body {
+    /* Don't @apply arbitrary values. Use CSS for these: */
+    background-color: var(--bg);
+    color: var(--text);
+
+    /* Safe to @apply real utilities: */
+    @apply font-sans antialiased;
+
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+
+  /* Optional: create reusable utilities bound to your CSS vars */
+  .bg-app { background-color: var(--bg); }
+  .text-app { color: var(--text); }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
