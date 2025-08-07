@@ -115,13 +115,13 @@ export function HeroSection() {
               
               {/* Profile image */}
               <motion.div
-                className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-transparent bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] p-1"
+                className="relative w-96 h-96 rounded-full overflow-hidden border-4 border-transparent bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] p-1"
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
                 <div className="w-full h-full rounded-full overflow-hidden bg-[var(--surface)]">
                   <Image
-                    src="/placeholder-uyiz6.png"
+                    src="/JS_logo.png"
                     alt="Jack Stewart - Computer Engineer"
                     width={320}
                     height={320}

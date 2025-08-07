@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
-import { LogoHexMonogram } from "./logo-hex-monogram";
+import Image from "next/image";
 import { ThemeToggle } from "./theme-toggle";
 
 const navItems = [
@@ -31,7 +31,13 @@ export function Navbar() {
           href="/"
           className="flex items-center space-x-3 hover:opacity-80 transition-opacity"
         >
-          <LogoHexMonogram size={28} />
+          <Image
+            src="/JS_logo.png"
+            alt="Jack Stewart Logo"
+            width={28}
+            height={28}
+            className="w-7 h-7"
+          />
           <span className="text-xl font-bold text-[var(--text)]">
             Jack Stewart
           </span>
