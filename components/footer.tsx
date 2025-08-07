@@ -12,14 +12,14 @@ export function Footer() {
           
           <div className="flex items-center space-x-4">
             <Link
-              href="https://github.com"
+              href="https://github.com/JackDStewart"
               className="text-[var(--text)]/60 hover:text-[var(--primary)] transition-colors p-2 rounded-md hover:bg-[var(--bg)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--surface)]"
               aria-label="GitHub Profile"
             >
               <Github className="h-5 w-5" />
             </Link>
             <Link
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/jackdstewart11"
               className="text-[var(--text)]/60 hover:text-[var(--primary)] transition-colors p-2 rounded-md hover:bg-[var(--bg)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--surface)]"
               aria-label="LinkedIn Profile"
             >
